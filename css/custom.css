@@ -1,16 +1,12 @@
 body {
   background: linear-gradient(-45deg, #8a2387, #e94057, #f27121);
   background-size: 400% 400%;
+  background-attachment: fixed;
   animation: gradient 12s ease infinite;
 }
 
-.container {
+.container-fluid {
   background: black;
-}
-
-h1 {
-  display: show;
-  
 }
 
 @keyframes gradient {
@@ -23,4 +19,9 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
