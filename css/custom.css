@@ -9,6 +9,14 @@ body {
   background: black !important;
 }
 
+.collapse {
+  height: 100%;
+}
+
+#navbarToggleExternalContent {
+  background-size: 100% 100%;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
