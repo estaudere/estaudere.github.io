@@ -6,7 +6,7 @@ body {
 }
 
 .container-fluid {
-  background: black;
+  background: black !important;
 }
 
 @keyframes gradient {
