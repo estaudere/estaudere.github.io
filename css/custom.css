@@ -41,6 +41,18 @@ img {
 	overflow-x: auto;
 }
 
+.card-block{
+	background-color: #fff;
+	border: none;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 0px;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+	}
+}
+
+
 @media {
     .collapse > .menu {
         padding-top: 70vh;
