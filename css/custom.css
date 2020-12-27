@@ -10,11 +10,31 @@ body {
   background: black !important;
 }
 
-.text {
-  color: white;
-  background: rgb(59, 2, 6);
-  mix-blend-mode: multiply;
-  ...
+h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(-45deg, #8a2387, #e94057, #f27121);
+  animation: gradient 12s ease infinite;
+  
+/*    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, 
+                    #7794ff, 
+                    #44107A,
+                    #FF1361,
+                    #FFF800); */
 }
 
 @media {
