@@ -10,8 +10,14 @@ body {
   background: black !important;
 }
 
-.menu div{
-  height: 100vh !important;
+@media {
+    .collapse > div {
+        /*changing this particular line does a lot, this is where the increase and decrease are done */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 95vh !important;
+        overflow: visible !important;
+    }
 }
 
 @keyframes gradient {
