@@ -11,6 +11,7 @@
     <!-- Custom styles for this template -->
     <link href="./css/menu.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet">
     
     <title>Starter Template for Bootstrap</title>
   </head>
@@ -20,9 +21,8 @@
 
    
       <!-- Navigation -->
-      <nav>
+      <nav class="container">
         <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
           <div class="overlay-content">
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -32,16 +32,30 @@
         </div>
       </nav>
       <!-- Navigation -->
-      <div class="hamburger hamburger--arrow fixed-action-btn" style="bottom: 25px; right: 25px;">
-          <a class="btn-floating btn-lg hamburger-box" id="openNav">
-            <i class="fas fa-bars hamburger-inner"></i>
-          </a>
-      </div>
-    <button class="hamburger" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+      <button class="hamburger hamburger--arrow" type="button">
+        <span class="hamburger-box" id="openNav">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      // Do something else, like open/close menu
+      hamburger.idList.toggle("closeNav")
+      });
+      
+      $('#openNav').on('click', function() {
+      $('#myNav').css("width", "100%");
+      });
+
+      $('#closeNav').on('click', function() {
+        $('#myNav').css("width", "0%");
+      });
+    </script>
 
     <main role="main" class="container-fluid">
 
@@ -85,6 +99,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+<!--     <script src="script.js"></script> -->
   </body>
 </html>
