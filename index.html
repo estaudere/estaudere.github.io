@@ -19,22 +19,53 @@
   <body>
 
    
-      <div class="menu">
-        <input id="burger" type="checkbox" />
+      <div class="off-canvas off-canvas--full-width off-canvas--navigation js-off-canvas js-off-canvas--nav">
+        <button class="reset anim-menu-btn offnav-control js-anim-menu-btn js-tab-focus" aria-label="Toggle navigation" aria-controls="off-canvas-navigation">
+          <svg class="offnav-control__bg" aria-hidden="true" viewbox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke-miterlimit="10" /></svg>
+          <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
+        </button>
 
-        <label for="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <main class="off-canvas__main bg shadow-sm">
+          <!-- insert your main content here -->
+          <div class="container max-width-sm height-100%">
+            <div class="flex flex-center height-100%">
+              <div class="text-component text-center">
+                <h1>Off-Canvas Navigation</h1>
+                <p>💬 Click the menu button.</p>
+              </div>
+            </div>
+          </div>
+        </main>
 
-        <nav>    
-          <ul>
-            <li><a href="#">Link #1</a></li>
-            <li><a href="#">Link #2</a></li>
-            <li><a href="#">Link #3</a></li>
-          </ul>
-        </nav>
+        <div id="off-canvas-navigation" class="off-canvas__panel js-off-canvas__panel" role="complementary">
+          <div class="off-canvas__content">
+            <div class="container max-width-sm padding-y-lg padding-bottom-0@md">
+              <div class="offnav height-100% flex flex-column text-center text-left@md">
+                <nav class="margin-bottom-lg" role="navigation" aria-label="Main">
+                  <ul class="grid gap-sm">
+                    <li><i class="offnav__label text-sm@md">Navigation</i></li>
+                    <li><a class="offnav__link text-xxl" href="#0">About</a></li>
+                    <li><a class="offnav__link text-xxl" href="#0">Our Services</a></li>
+                    <li><a class="offnav__link text-xxl" href="#0">Portfolio</a></li>
+                    <li><a class="offnav__link text-xxl" href="#0">Blog</a></li>
+                    <li><a class="offnav__link text-xxl" href="#0">Contact</a></li>
+                  </ul>
+                </nav>
+
+                <nav class="offnav__subnav margin-top-auto@md padding-y-xs@md" role="navigation" aria-label="Secondary">
+                  <ul class="flex flex-column gap-sm flex-row@md text-xs@md">
+                    <li class="margin-right-auto@md">&copy;Copyright</li>
+                    <li><a href="#0" class="color-contrast-higher">Twitter</a></li>
+                    <li><a href="#0" class="color-contrast-higher">Facebook</a></li>
+                    <li><a href="#0" class="color-contrast-higher">Instagram</a></li>
+                  </ul>
+                </nav>
+
+                <button class="reset offnav__a11y-close-btn js-off-canvas__close-btn js-off-canvas__a11y-close-btn">Close Navigation 👉</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     <main role="main" class="container-fluid">
