@@ -32,32 +32,27 @@
         </div>
       </nav>
       <!-- Navigation -->
-      <button class="hamburger hamburger--arrow fixed-top" type="button">
-        <span class="hamburger-box" id="openNav">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+      <div class="fixed-top">
+        <button class="hamburger hamburger--arrow float-right p-3" type="button">
+          <span class="hamburger-box" id="openNav">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     <script>
       // Look for .hamburger
       var hamburger = document.querySelector(".hamburger");
       // On click
       hamburger.addEventListener("click", function() {
       // Toggle class "is-active"
-      hamburger.classList.toggle("is-active");
-      // Do something else, like open/close menu
-      $('#myNav').css("width", "100%");
-
-      $('#closeNav').on('click', function() {
-        $('#myNav').css("width", "0%");
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+        // if ($('#myNav').style.width === "100%") {
+        //   $('#myNav').style.width = "0%";
+        // } else {
+        //   $('#myNav').style.width = "100%";
+        // }
       });
-      });
-      
-      $('#openNav').on('click', function() {
-      $('#myNav').css("width", "100%");
-      });
-
-      $('#closeNav').on('click', function() {
-        $('#myNav').css("width", "0%");
       });
     </script>
 

@@ -25,14 +25,14 @@
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #45B5AA;
+  color: white;
   display: block;
   transition: 0.3s;
   font-weight: 500;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #7EE1D6;
+  text-decoration: underline;
 }
 
 /* .overlay .closebtn {
