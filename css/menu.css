@@ -5,9 +5,12 @@
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
+  background: linear-gradient(-45deg, #8a2387, #e94057, #f27121);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: gradient 12s ease infinite;
 }
 
 .overlay-content {

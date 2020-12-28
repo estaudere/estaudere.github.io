@@ -45,7 +45,11 @@
       // Toggle class "is-active"
       hamburger.classList.toggle("is-active");
       // Do something else, like open/close menu
-      hamburger.idList.toggle("closeNav")
+      $('#myNav').css("width", "100%");
+
+      $('#closeNav').on('click', function() {
+        $('#myNav').css("width", "0%");
+      });
       });
       
       $('#openNav').on('click', function() {
