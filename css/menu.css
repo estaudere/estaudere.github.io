@@ -7,65 +7,12 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #1d1f20;
-    color: #e5e5e5;
-    font: 16px/1.25 'Raleway', sans-serif;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
-a {
-    color: #a2ed56;
-}
-
-a:hover {
-    color: #83e4e2;
-    text-decoration: none;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 80em;
-}
-
-main .container {
-    padding: 1em;
-}
-
-p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 40em;
-}
-
-.screen-reader-text {
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    width: 1px;
-}
-
-
 
 /************************************************/
 /****************** NAVIGATION ******************/
 /************************************************/
 nav {
-    background: #e5e5e5;
-    color: #1d1f20;
+    color: white;
     left: 0;
     position: relative;
     top: 0;
@@ -84,22 +31,23 @@ nav input {
 nav label {
     cursor: pointer;
     display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
+    font: sans-serif;
 }
 
 /* Hamburger Icon */
 #menu-icon,
 #menu-icon:before,
 #menu-icon:after {
+    color: white;
     background: #1d1f20;
-    border-radius: 0.05em;
+    border-radius: 7;
     height: 0.2em;
     transition: all 0.2s ease-in-out;
     width: 100%;
 }
 
 #menu-icon {
+    color: white;
     display: inline-block;
     margin: 0.4em 0;
     max-width: 1em;
@@ -144,7 +92,6 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 /*** MENU ***/
 /* Overlay */
 nav input:checked ~ #overlay {
-    background: #e5e5e5;
     bottom: 0;
     left: 0;
     height: 100vh;

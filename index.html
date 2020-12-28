@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    <link href="./css/menu.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
-    <link href="./css/menu.scss" rel="stylesheet">
     
     <title>Starter Template for Bootstrap</title>
   </head>
@@ -19,54 +19,57 @@
   <body>
 
    
-      <div class="off-canvas off-canvas--full-width off-canvas--navigation js-off-canvas js-off-canvas--nav">
-        <button class="reset anim-menu-btn offnav-control js-anim-menu-btn js-tab-focus" aria-label="Toggle navigation" aria-controls="off-canvas-navigation">
-          <svg class="offnav-control__bg" aria-hidden="true" viewbox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke-miterlimit="10" /></svg>
-          <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
-        </button>
-
-        <main class="off-canvas__main bg shadow-sm">
-          <!-- insert your main content here -->
-          <div class="container max-width-sm height-100%">
-            <div class="flex flex-center height-100%">
-              <div class="text-component text-center">
-                <h1>Off-Canvas Navigation</h1>
-                <p>💬 Click the menu button.</p>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <div id="off-canvas-navigation" class="off-canvas__panel js-off-canvas__panel" role="complementary">
-          <div class="off-canvas__content">
-            <div class="container max-width-sm padding-y-lg padding-bottom-0@md">
-              <div class="offnav height-100% flex flex-column text-center text-left@md">
-                <nav class="margin-bottom-lg" role="navigation" aria-label="Main">
-                  <ul class="grid gap-sm">
-                    <li><i class="offnav__label text-sm@md">Navigation</i></li>
-                    <li><a class="offnav__link text-xxl" href="#0">About</a></li>
-                    <li><a class="offnav__link text-xxl" href="#0">Our Services</a></li>
-                    <li><a class="offnav__link text-xxl" href="#0">Portfolio</a></li>
-                    <li><a class="offnav__link text-xxl" href="#0">Blog</a></li>
-                    <li><a class="offnav__link text-xxl" href="#0">Contact</a></li>
-                  </ul>
-                </nav>
-
-                <nav class="offnav__subnav margin-top-auto@md padding-y-xs@md" role="navigation" aria-label="Secondary">
-                  <ul class="flex flex-column gap-sm flex-row@md text-xs@md">
-                    <li class="margin-right-auto@md">&copy;Copyright</li>
-                    <li><a href="#0" class="color-contrast-higher">Twitter</a></li>
-                    <li><a href="#0" class="color-contrast-higher">Facebook</a></li>
-                    <li><a href="#0" class="color-contrast-higher">Instagram</a></li>
-                  </ul>
-                </nav>
-
-                <button class="reset offnav__a11y-close-btn js-off-canvas__close-btn js-off-canvas__a11y-close-btn">Close Navigation 👉</button>
-              </div>
-            </div>
-          </div>
+      <nav>
+        <div class="nav-container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu"><span id="menu-icon"></span></label>
+            <div id="overlay"></div>
+            <ul>
+                <li><a href="http://art.yale.edu/">Yale University School of Art</a></li>
+                <li><a href="http://www.suzannecollinsbooks.com/">Suzanne Collins</a></li>
+                <li><a href="http://www.arrestling.com/index.htm">Gulla’s Arrestling</a></li>
+                <li><a href="http://www.roverp6cars.com/">MGBD Parts &amp; Services</a></li>
+                <li><a href="http://www.irishwrecksonline.net/">Irish Shipwrecks Online</a></li>
+                <li><a href="http://www.arngren.net/">Arngren</a></li>
+                <li><a href="https://www.lingscars.com/">Ling's Cars</a></li>
+                <li><a href="http://www.007museum.com/">JAMES BOND 007 MUSEUM</a></li>
+                <li><a href="http://www.dokimos.org/ajff/">ACCEPT JESUS, FOREVER FORGIVEN!</a></li>
+                <li><a href="http://ronoslund.com/">Ron Oslund's Home Page</a></li>
+            </ul>
+            <ul id="social-media">
+                <li>
+                    <a href="https://dribbble.com/erinesullivan">
+                        <i class="fab fa-dribbble"></i>
+                        <span class="screen-reader-text">Dribbble</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://codepen.io/erinesullivan/">
+                        <i class="fab fa-codepen"></i>
+                        <span class="screen-reader-text">CodePen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/erin_e_sullivan">
+                        <i class="fab fa-twitter"></i>
+                        <span class="screen-reader-text">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/erinesullivan1">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="screen-reader-text">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/erin_e_sullivan/">
+                        <i class="fab fa-instagram"></i>
+                        <span class="screen-reader-text">Instagram</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </div>
+    </nav>
 
     <main role="main" class="container-fluid">
 
