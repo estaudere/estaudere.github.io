@@ -35,7 +35,7 @@ main {
 a {
   color: currentColor;
   text-decoration: underline;
-  cursor: url(assets/wiretap_gradient.cur), url(https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fwiretap_gradient.svg?v=1609179819522), none;
+  cursor: url(https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fwiretap_gradient.svg?v=1609182664127), pointer;
 }
 
 a:hover {
