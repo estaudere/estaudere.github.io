@@ -70,16 +70,6 @@ img {
     transition: 0.4s ease-in-out 0.1s;
 }
 
-
-@media {
-    .collapse > .menu {
-        padding-top: 70vh;
-        padding-bottom: 10px;
-        height: 93vh !important;
-        overflow: visible;
-    }
-}
-
 @-webkit-keyframes gradient {
      0% {
          background-position: 0% 50% 
