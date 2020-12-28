@@ -1,141 +1,61 @@
-@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-
-/************************************************/
-/****************** NAVIGATION ******************/
-/************************************************/
-nav {
-    color: white;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-/*** INPUT ***/
-nav input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #45B5AA;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
 }
 
-/*** LABEL ***/
-nav label {
-    cursor: pointer;
-    display: block;
-    font: sans-serif;
+.overlay a:hover, .overlay a:focus {
+  color: #7EE1D6;
 }
 
-/* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
-    color: white;
-    background: #1d1f20;
-    border-radius: 7;
-    height: 0.2em;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-#menu-icon {
-    color: white;
-    display: inline-block;
-    margin: 0.4em 0;
-    max-width: 1em;
-    position: relative;
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
-nav label #menu-icon {
-    float: right;
+body {
+  background-color: #FF6F61;
 }
 
-#menu-icon:before,
-#menu-icon:after {
-    content: '';
-    left: 0;
-    position: absolute;
+main {
+  height: 100vh;
 }
 
-#menu-icon:before {
-    top: -0.4em;
-}
-
-#menu-icon:after {
-    bottom: -0.4em;
-}
-
-/* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
-    background: transparent;
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:before {
-    top: 0;
-    transform: rotate(-45deg);
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:after {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-
-
-/*** MENU ***/
-/* Overlay */
-nav input:checked ~ #overlay {
-    bottom: 0;
-    left: 0;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-}
-
-/* List */
-nav ul {
-    font-size: 1.5em;
-    list-style: none;
-    margin: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-}
-
-nav input:checked ~ ul {
-    margin: 1em;
-    max-height: inherit;
-    opacity: 1;
-}
-
-nav ul > li {
-    margin: 0.5em 0;
-}
-
-nav ul a {
-    color: #1d1f20!important;
-    text-decoration: none;
-}
-
-nav ul a:hover {
-    text-decoration: underline;
-}
-
-/* Social Media */
-nav ul#social-media > li {
-    display: inline-block;
-    font-size: 1.5em;
-    margin: 0.5em;
+.turquoise {
+  background-color: #45B5AA; 
 }

@@ -19,57 +19,29 @@
   <body>
 
    
+      <!-- Navigation -->
       <nav>
-        <div class="nav-container">
-            <input id="responsive-menu" type="checkbox">
-            <label for="responsive-menu"><span id="menu-icon"></span></label>
-            <div id="overlay"></div>
-            <ul>
-                <li><a href="http://art.yale.edu/">Yale University School of Art</a></li>
-                <li><a href="http://www.suzannecollinsbooks.com/">Suzanne Collins</a></li>
-                <li><a href="http://www.arrestling.com/index.htm">Gulla’s Arrestling</a></li>
-                <li><a href="http://www.roverp6cars.com/">MGBD Parts &amp; Services</a></li>
-                <li><a href="http://www.irishwrecksonline.net/">Irish Shipwrecks Online</a></li>
-                <li><a href="http://www.arngren.net/">Arngren</a></li>
-                <li><a href="https://www.lingscars.com/">Ling's Cars</a></li>
-                <li><a href="http://www.007museum.com/">JAMES BOND 007 MUSEUM</a></li>
-                <li><a href="http://www.dokimos.org/ajff/">ACCEPT JESUS, FOREVER FORGIVEN!</a></li>
-                <li><a href="http://ronoslund.com/">Ron Oslund's Home Page</a></li>
-            </ul>
-            <ul id="social-media">
-                <li>
-                    <a href="https://dribbble.com/erinesullivan">
-                        <i class="fab fa-dribbble"></i>
-                        <span class="screen-reader-text">Dribbble</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://codepen.io/erinesullivan/">
-                        <i class="fab fa-codepen"></i>
-                        <span class="screen-reader-text">CodePen</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/erin_e_sullivan">
-                        <i class="fab fa-twitter"></i>
-                        <span class="screen-reader-text">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/erinesullivan1">
-                        <i class="fab fa-linkedin"></i>
-                        <span class="screen-reader-text">LinkedIn</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/erin_e_sullivan/">
-                        <i class="fab fa-instagram"></i>
-                        <span class="screen-reader-text">Instagram</span>
-                    </a>
-                </li>
-            </ul>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
-    </nav>
+      </nav>
+      <!-- Navigation -->
+      <div class="hamburger hamburger--arrow fixed-action-btn" style="bottom: 25px; right: 25px;">
+          <a class="btn-floating btn-lg hamburger-box" id="openNav">
+            <i class="fas fa-bars hamburger-inner"></i>
+          </a>
+      </div>
+    <button class="hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
     <main role="main" class="container-fluid">
 
@@ -113,5 +85,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
