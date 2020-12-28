@@ -2,7 +2,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1000;
+  z-index: 50;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -35,20 +35,20 @@
   color: #7EE1D6;
 }
 
-.overlay .closebtn {
+/* .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
+} */
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
-  .overlay .closebtn {
+/*   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
+  } */
 }
 
 body {

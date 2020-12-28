@@ -18,9 +18,7 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; 
-  z-index: 1500;
-}
+  overflow: visible; }
   .hamburger:hover {
     opacity: 0.7; }
   .hamburger.is-active:hover {
@@ -34,16 +32,12 @@
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; 
-  z-index: 1500;
-}
+  position: relative; }
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; 
-  z-index: 1500;
-}
+  margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
@@ -178,9 +172,6 @@
 /*
    * Arrow
    */
-.hamburger--arrow {
-  z-index: 1500;
-}
 .hamburger--arrow.is-active .hamburger-inner::before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1); }
 
