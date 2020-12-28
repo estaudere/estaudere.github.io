@@ -40,7 +40,7 @@ a {
 a:hover {
   color: currentColor;
   text-decoration: none;
-  cursor: url(https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fwiretap_gradient.cur?v=1609183258585), url(https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fwiretap_gradient.svg?v=1609182664127), pointer;
+  cursor: url(https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fwiretap_cursor.png?v=1609184094701), pointer;
 }
 
 img {
