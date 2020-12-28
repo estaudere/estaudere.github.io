@@ -1,113 +1,194 @@
-/* -------------------------------- 
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-File#: _2_off-canvas-navigation
-Title: Off-Canvas Navigation
-Descr: An off-canvas section containing the main navigation
-Usage: codyhouse.co/license
-
--------------------------------- */
-
-// navigation control
-.offnav-control { // variation of the Animated Menu Button component
-  --anim-menu-btn-size: 48px;
-  // 🍔 icon
-  --anim-menu-btn-icon-size: 24px;
-  --anim-menu-btn-icon-stroke: 2px;
-  position: fixed;
-  top: var(--space-sm);
-  left: var(--space-sm);
-  z-index: var(--zindex-fixed-element);
-  border-radius: 50%;
-  transition: transform .3s var(--ease-in-out);
-  color: var(--color-contrast-high); // icon color
-
-  &.anim-menu-btn--state-b {
-    transform: rotate(180deg);
-  }
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-.offnav-control__bg { // SVG used to set background color and animated stroke
-  display: block;
-  fill: var(--color-contrast-lower); // button background color
-  stroke-width: 1.5;
-  stroke: var(--color-contrast-low); // stroke color
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.offnav-control--ready-to-animate circle {
-  transition: stroke-dashoffset 0.3s 0s;
+body {
+    background-color: #1d1f20;
+    color: #e5e5e5;
+    font: 16px/1.25 'Raleway', sans-serif;
 }
 
-.anim-menu-btn--state-b.offnav-control circle {
-  stroke-dashoffset: 0;
-  transition-delay: 0.3s;
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
-// off-canvas navigation
-.offnav {}
-
-.offnav__link {
-  color: var(--color-contrast-higher);
-  text-decoration: none;
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(transparent 60%, alpha(var(--color-primary), 0.2) 60%);
-  will-change: background-size;
-  transition: background-size .3s var(--ease-in-out), color .3s;
-
-  &:hover, &[aria-current="page"], &.offnav__link--current {
-    color: var(--color-primary);
-  }
-
-  &:hover {
-    background-size: 100% 100%;
-  }
+a {
+    color: #a2ed56;
 }
 
-.offnav__a11y-close-btn { // accessible close button - sr and keyboard
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: var(--zindex-fixed-element);
-  background-color: var(--color-contrast-lower);
-  padding: var(--space-sm) var(--space-md);
-  box-shadow: var(--shadow-lg);
-
-  // hide
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-
-  &:focus {
-    // show
-    clip: auto;
-    clip-path: none;
-    outline: 3px solid var(--color-primary);
-  }
+a:hover {
+    color: #83e4e2;
+    text-decoration: none;
 }
 
-@include breakpoint(md) {
-  .offnav__label { // - navigation
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 2em;
-      height: 1px;
-      background-color: currentColor;
-      vertical-align: middle;
-      margin-right: 0.5em;
-    }
-  }
-
-  .offnav__subnav {
-    border-top: 1px solid var(--color-contrast-low);
-  }
+.container {
+    margin: 0 auto;
+    max-width: 80em;
 }
 
-// JS disabed style
-html:not(.js) .offnav-control {
-  display: none;
+main .container {
+    padding: 1em;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+nav {
+    background: #e5e5e5;
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #e5e5e5;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
 }
