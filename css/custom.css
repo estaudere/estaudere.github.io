@@ -41,15 +41,17 @@ img {
 	overflow-x: auto;
 }
 
-.card-block{
+.card {
 	background-color: #fff;
 	border: none;
 	transition: all 0.2s ease-in-out !important;
 	border-radius: 0px;
-	&:hover{
-		transform: translateY(-5px);
+  transition: 0.4s ease-in-out 0.1s;
+}
+
+.card::hover{
+		transform: translateY(-10px);
 		box-shadow: none;
-	}
 }
 
 
