@@ -42,16 +42,21 @@ img {
 }
 
 .card {
-	background-color: #fff;
+	background-color: black;
 	border: none;
-	transition: all 0.2s ease-in-out !important;
 	border-radius: 0px;
+  position: relative;
   transition: 0.4s ease-in-out 0.1s;
 }
 
-.card::hover{
-		transform: translateY(-10px);
+.card:hover{
+		-moz-transform: translate(0px, -5px);
+    -ms-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+    transform: translate(0px, -5px)
 		box-shadow: none;
+    transition: 0.4s ease-in-out 0.1s;
 }
 
 
