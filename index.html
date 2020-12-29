@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="./css/menu.css" rel="stylesheet">
-    <link href="./css/custom.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link href="css/hamburgers.css" rel="stylesheet">
     
-    <title>Starter Template for Bootstrap</title>
+    <!-- more meta tags -->
+    <title>neha desaraju's portfolio.</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
   </head>
 
 
@@ -24,14 +26,12 @@
       <nav class="container">
         <div id="myNav" class="overlay">
           <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#">Home</a>
+            <a href="./pages/about.html">About</a>
+            <a href="#">Projects</a>
           </div>
         </div>
       </nav>
-      <!-- Navigation -->
       <div class="fixed-top">
         <button class="hamburger hamburger--arrow float-right p-3" type="button">
           <span class="hamburger-box" id="openNav">
@@ -47,36 +47,54 @@
       // Toggle class "is-active"
         hamburger.classList.toggle("is-active");
         // Do something else, like open/close menu
-        // if ($('#myNav').style.width === "100%") {
-        //   $('#myNav').style.width = "0%";
-        // } else {
-        //   $('#myNav').style.width = "100%";
-        // }
-        document.getElementById("myBtn").style.width
-      });
+        if (document.getElementById("myNav").style.width === "100%") {
+          document.getElementById("myNav").style.width = "0%";
+          document.body.classList.remove("stop-scrolling")
+        }
+        else {
+          document.getElementById("myNav").style.width = "100%"
+          document.body.classList.add("stop-scrolling")
+        }
       });
     </script>
 
-    <main role="main" class="container-fluid">
+    
+    <!-- main -->
+    <main role="main" class="container-fluid pl-5">
 
-      <div class="starter-template flex-column align-items-center">
-        <h1 class="align-self-center">i'm neha desaraju.</h1>
-        <h2 class="lead">A creative organizer based in <a href="#">Dallas</a>.</h2>
+      <div class="starter-template row">
+        <h1 class="align-self-center mt-5 pl-0">i'm neha desaraju.</h1>
+        <div class="pl-0">
+          <h2 class="lead mt-4" style="max-width: 60%;">I'm a student, journalist, and (aspiring) data analyst. I also do comms for political organizations. In other words: Usually I write and code things, sometimes I design things. Always an organizer. Currently working at <a href="https://www.sunrisemovement.org">Sunrise Movement</a> for a better future.</h2>
+          <a href="./pages/about.html" class="animated-arrow">
+            <span class="the-arrow -left">
+              <span class="shaft"></span>
+            </span>
+            <span class="main">
+              <span class="text">
+                About me
+              </span>
+              <span class="the-arrow -right">
+                <span class="shaft"></span>
+              </span>
+            </span></a>
+        </div>
       </div>
 
-    </main><!-- /.container -->
+    </main>
     
+    <!-- featured projects -->
     <div class="container-fluid">
       <div class="scrolling-wrapper row flex-row flex-nowrap ml-2 pb-4 pt-2">
         <div class="col-5 col-md-3">
-          <div class="card card-1">
+          <div class="card">
             <a href="#">
               <img src="https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fjon-tyson-_ZS_mtl_H_0-unsplash.jpg?v=1609108122014">
             </a>
           </div>
         </div>
         <div class="col-7">
-          <div class="card card-2 mt-5 ml-3">
+          <div class="card mt-5 ml-3">
             <img src="https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fjordan-whitfield-sm3Ub_IJKQg-unsplash.jpg?v=1609108122567">
           </div>
         </div>
@@ -86,12 +104,34 @@
           </div>
         </div>
         <div class="col-5 col-md-3">
-          <div class="card card-4 ml-4">
+          <div class="card ml-4">
             <img src="https://cdn.glitch.com/7da6ef22-e0c4-4068-86d8-710010509457%2Fmichael-kemp-aC8_GKNHodw-unsplash.jpg?v=1609108124116">
           </div>
         </div>
       </div>
+      <div class="d-flex justify-content-end mt-0 mr-4 mb-5" style="width: 90%;">
+          <a href="#" class="animated-arrow">
+            <span class="the-arrow -left">
+              <span class="shaft"></span>
+            </span>
+            <span class="main">
+              <span class="text">
+                Explore More
+              </span>
+              <span class="the-arrow -right">
+                <span class="shaft"></span>
+              </span>
+            </span></a>
+      </div>
   </div>
+    
+    <!-- footer -->
+    <footer id="sticky-footer" class="bg-dark text-white-50" style="border-top: 1px solid white;">
+      <div class="container-fluid d-flex flex-row justify-content-between p-4">
+        <a href="./pages/the-end.html" style="text-decoration: none;"><small class="pt-2" style="font-family: 'DM Mono', monospace;">"End? No, the journey doesn't end here."</small></a>
+        <small>Made with &lt;3 by<br>Neha Desaraju &copy;2020</small>
+      </div>
+    </footer>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -99,6 +139,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--     <script src="script.js"></script> -->
   </body>
 </html>

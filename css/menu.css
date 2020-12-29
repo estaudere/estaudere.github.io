@@ -3,22 +3,26 @@
   width: 0;
   position: fixed;
   z-index: 50;
-  top: 0;
+  bottom: 0;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
   background: linear-gradient(-45deg, #8a2387, #e94057, #f27121);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   background-attachment: fixed;
-  animation: gradient 12s ease infinite;
+  animation: gradient 8s ease infinite;
+  overflow: hidden;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  top: 80%;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  padding-right: 15px;
+  overflow: hidden;
 }
 
 .overlay a {
@@ -33,6 +37,7 @@
 
 .overlay a:hover, .overlay a:focus {
   text-decoration: underline;
+  animation: 0.3s;
 }
 
 /* .overlay .closebtn {
@@ -50,15 +55,10 @@
     right: 35px;
   } */
 }
-
-body {
-  background-color: #FF6F61;
-}
-
 main {
   height: 100vh;
 }
 
-.turquoise {
-  background-color: #45B5AA; 
+.stop-scrolling {
+  overflow: hidden;
 }
