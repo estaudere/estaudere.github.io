@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/hamburgers.css" rel="stylesheet" />
+    <link href="../css/portfolio.css" rel="stylesheet" />
+
+    <!-- more meta tags -->
+    <title>work. | neha desaraju</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="container">
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="#">Projects</a>
+        </div>
+      </div>
+    </nav>
+    <div class="fixed-top">
+      <button class="hamburger hamburger--arrow float-right p-3" type="button">
+        <span class="hamburger-box" id="openNav">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+        if (document.getElementById("myNav").style.width === "100%") {
+          document.getElementById("myNav").style.width = "0%";
+          document.body.classList.remove("stop-scrolling");
+        } else {
+          document.getElementById("myNav").style.width = "100%";
+          document.body.classList.add("stop-scrolling");
+        }
+      });
+    </script>
+
+    <!-- main -->
+    <main role="main" class="container-fluid pl-5">
+      <h2
+        class="lead mt-4 mb-3"
+        style="font-size: xx-large; max-width: 70%; color: #8a2387;"
+      >
+        Work
+      </h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-tabs ml-2">
+          <div class="tab" href="" data-rel="all">All</div>
+          <div class="tab" data-rel="writing">Writing</div>
+          <div class="tab" data-rel="data">Data</div>
+        </div>
+        <div class="portfolio-content mt-4">
+          <a
+            href="https://coppellstudentmedia.com/102952/showcase/not-in-the-books-board-faces-months-of-deliberating-on-budget-with-projected-7-million-deficit/"
+            data-id="bud"
+            class="item all writing data"
+            ><span
+              >Not in the books: Board faces months of deliberating on budget...
+              ~ <em>The Sidekick</em></span
+            ></a
+          >
+          <a
+            href="https://coppellstudentmedia.com/103681/news/waging-an-inevitable-war-part-3/"
+            data-id="mdb"
+            class="item all data award"
+            ><p>Explore <em>The Sidekick</em>'s Media Bias survey</p></a
+          >
+          <a
+            href="https://coppellstudentmedia.com/102811/opinions/its-time-to-end-the-era-of-instagram-infographics/"
+            data-id="ifg"
+            class="item all writing award"
+          >
+            It's time to end the era of Instagram infographics ~
+            <em>The Sidekick</em>
+          </a>
+          <a
+            href="https://coppellstudentmedia.com/84784/sports/for-female-wrestlers-losing-weight-is-a-source-of-positivity/"
+            data-id="wre"
+            class="item all writing award"
+            >For female wrestlers, losing weight is a source of positivity ~
+            <em>The Sidekick</em></a
+          >
+          <a
+            href="https://coppellstudentmedia.com/85724/news/despite-the-name-micro-schools-have-big-aspirations/"
+            data-id="mcr"
+            class="item all writing award"
+            >Despite the name, micro schools have big aspirations ~
+            <em>The Sidekick</em></a
+          >
+          <a
+            href="https://estaudere.github.io/covid-visualizations/"
+            data-id="cvv"
+            class="item all data"
+            >Visualizing Covid</a
+          >
+          <a
+            href="https://www.mic.com/p/im-16-heres-why-i-organized-for-bernie-sanders-22645851"
+            data-id="mic"
+            class="item all writing"
+            >I'm 16. Here's why I organized for Bernie Sanders. ~
+            <em>Mic.com</em></a
+          >
+          <a
+            href="https://coppellstudentmedia.com/staff_name/neha-desaraju/"
+            data-id="sdk"
+            class="item all writing"
+          >
+            More stories from <em>The Sidekick</em>
+          </a>
+          <a
+            href="https://coppellstudentmedia.com/100396/entertainment/dream-come-true-coppell-arts-center-hoping-to-become-local-cultural-landmark/"
+            data-id="cac"
+            class="item all writing"
+            >“Dream come true”: Coppell Arts Center hoping to become local... ~
+            <em>The Sidekick</em></a
+          >
+          <a
+            href="https://estaudere.github.io/learning/"
+            data-id="lrn"
+            class="item all data"
+            >What I'm Learning</a
+          >
+          <a
+            href="https://coppellstudentmedia.com/102301/entertainment/love-of-storytelling-through-generations-influencing-zeffs-love-of-cinema/"
+            data-id="ibz"
+            class="item all writing"
+            >Love of storytelling through generations influencing Zeff’s love of
+            cinema ~ <em>The Sidekick</em></a
+          >
+          <a
+            href="https://github.com/estaudere"
+            data-id="gth"
+            class="item all data"
+            >More from my GitHub</a
+          >
+          <a
+            href="https://www.kekemagazine.com/author/neha-desaraju/"
+            data-id="kke"
+            class="item all writing"
+            >From from <em>Keke Magazine</em></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var selectedClass = "";
+        $(".tab").click(function () {
+          selectedClass = $(this).attr("data-rel");
+          $(".portfolio-content").fadeTo(100, 0.1);
+          $(".item")
+            .not("." + selectedClass)
+            .fadeOut();
+          setTimeout(function () {
+            $("." + selectedClass).fadeIn();
+            $(".portfolio-content").fadeTo(500, 1);
+          }, 500);
+        });
+      });
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

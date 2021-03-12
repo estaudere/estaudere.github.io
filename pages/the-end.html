@@ -1,84 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="../css/menu.css" rel="stylesheet">
-    <link href="../css/custom.css" rel="stylesheet">
-    <link href="../css/hamburgers.css" rel="stylesheet">
-    
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/hamburgers.css" rel="stylesheet" />
+
     <!-- more meta tags -->
     <title>neha desaraju's portfolio.</title>
     <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
   </head>
 
-
   <body>
-
-   
-      <!-- Navigation -->
-      <nav class="container">
-        <div id="myNav" class="overlay">
-          <div class="overlay-content">
-            <a href="../index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="#">Projects</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="container">
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./portfolio.html">Projects</a>
         </div>
-      </nav>
-      <div class="fixed-top">
-        <button class="hamburger hamburger--arrow float-right p-3" type="button">
-          <span class="hamburger-box" id="openNav">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
       </div>
+    </nav>
+    <div class="fixed-top">
+      <button class="hamburger hamburger--arrow float-right p-3" type="button">
+        <span class="hamburger-box" id="openNav">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
     <script>
       // Look for .hamburger
       var hamburger = document.querySelector(".hamburger");
       // On click
-      hamburger.addEventListener("click", function() {
-      // Toggle class "is-active"
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
         hamburger.classList.toggle("is-active");
         // Do something else, like open/close menu
         if (document.getElementById("myNav").style.width === "100%") {
           document.getElementById("myNav").style.width = "0%";
-          document.body.classList.remove("stop-scrolling")
-        }
-        else {
-          document.getElementById("myNav").style.width = "100%"
-          document.body.classList.add("stop-scrolling")
+          document.body.classList.remove("stop-scrolling");
+        } else {
+          document.getElementById("myNav").style.width = "100%";
+          document.body.classList.add("stop-scrolling");
         }
       });
     </script>
 
-    
     <!-- main -->
     <main role="main" class="container-fluid pl-5">
-
-      <div class="d-flex flex-column mx-auto justify-content-center align-items-center" style="width: 60vw; height: 100vh; text-align: center;">
-        <hr style="border: 1px solid white; width: 40%; max-width: 100px;">
-        <h1 class="align-self-center mt-4 mb-2 pl-0" style="font-size: large; text-align: center;">"You think, as you walk away 
-          from Le Cirque des Rêves and into the creeping dawn, that you felt more awake within the confines of the circus. 
-          You are no longer quite certain which side of the fence is the dream."</h1>
-        <small class="mb-4"><strong>ERIN MORGENSTERN, THE NIGHT CIRCUS</strong></small>
-        <hr style="border: 1px solid white; width: 40%; max-width: 100px;">
+      <div
+        class="d-flex flex-column mx-auto justify-content-center align-items-center"
+        style="width: 60vw; height: 100vh; text-align: center;"
+      >
+        <hr style="border: 1px solid white; width: 40%; max-width: 100px;" />
+        <h1
+          class="align-self-center mt-4 mb-2 pl-0"
+          style="font-size: large; text-align: center;"
+        >
+          "You think, as you walk away from Le Cirque des Rêves and into the
+          creeping dawn, that you felt more awake within the confines of the
+          circus. You are no longer quite certain which side of the fence is the
+          dream."
+        </h1>
+        <small class="mb-4"
+          ><strong>ERIN MORGENSTERN, THE NIGHT CIRCUS</strong></small
+        >
+        <hr style="border: 1px solid white; width: 40%; max-width: 100px;" />
       </div>
-
     </main>
-    
-    
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,100 @@
+.portfolio-container {
+  max-width: 100%;
+}
+
+.item {
+  float: left;
+  height: 200px;
+  width: 30%;
+  padding: 10px;
+  background-color: #333333;
+  color: #fff;
+  margin: 5px;
+  display: block;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s 0s ease-in-out;
+  position: relative;
+}
+.item:hover {
+  opacity: 0.5;
+}
+
+.portfolio-tabs {
+  float: none;
+  display: inline-block;
+  font-family: "DM Mono", monospace;
+  border-bottom: 1px #ccc solid;
+}
+
+.portfolio-tabs div {
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  float: left;
+}
+.portfolio-tabs div:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+/* awards */
+.award::before {
+  content: "🏆";
+  position: absolute;
+  top: 160px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+/* background images */
+
+[data-id="bud"] {
+  background-image: url(../assets/bud.png);
+}
+[data-id="mdb"] {
+  background-image: url(../assets/mdb.png);
+}
+[data-id="mic"] {
+  background-image: url(../assets/mic.jpg);
+}
+[data-id="mcr"] {
+  background-image: url(../assets/mcr.jpg);
+}
+[data-id="wre"] {
+  background-image: url(../assets/wre.png);
+}
+[data-id="ibz"] {
+  background-image: url(../assets/ibz.jpg);
+}
+[data-id="cvv"] {
+  background-image: url(../assets/cvv.png);
+}
+[data-id="cac"] {
+  background-image: url(../assets/cac.jpg);
+}
+[data-id="fem"] {
+  background-image: url(../assets/budget_cover.png);
+}
+[data-id="sdk"] {
+  background-color: #8a2387;
+}
+[data-id="gth"] {
+  background-color: #f27121;
+}
+[data-id="kke"] {
+  background-color: #e94057;
+}
+[data-id="lrn"] {
+  background-color: #f27121;
+}
+[data-id="ifg"] {
+  background-image: url(../assets/ifg.png);
+}
+[data-id="wwa"] {
+  background-image: url(../assets/budget_cover.png);
+}
