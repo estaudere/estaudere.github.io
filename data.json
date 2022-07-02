@@ -8,12 +8,12 @@
         {
             "title": "Github",
             "link": "https://github.com/estaudere",
-            "icon": "fa fa-github"
+            "icon": "fa-brands fa-github"
         },
         {
             "title": "LinkedIn",
             "link": "https://www.linkedin.com/in/neha-desaraju/",
-            "icon": "fa fa-linkedin"
+            "icon": "fa-brands fa-linkedin"
         },
         {
             "title": "Resume",
