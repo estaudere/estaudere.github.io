@@ -1,0 +1,59 @@
+{
+    "socials": [
+        {
+            "title": "Mail",
+            "link": "mailto:neha.desaraju@gmail.com",
+            "icon": "fa-solid fa-envelope"
+        },
+        {
+            "title": "Github",
+            "link": "https://github.com/estaudere",
+            "icon": "fa-brand fa-github"
+        },
+        {
+            "title": "LinkedIn",
+            "link": "https://www.linkedin.com/in/neha-desaraju/",
+            "icon": "fa-brand fa-linkedin"
+        },
+        {
+            "title": "Resume",
+            "link": "https://google.com/",
+            "icon": "fa-solid fa-file-pdf"
+        }
+    ],
+    "currently":{
+        "2022": [
+            {
+                "title": "Technical Project Manager",
+                "company": "Texas Convergent",
+                "link": "https://www.txconvergent.org/"
+            },
+            {
+                "title": "Executive Director of Technical Development",
+                "company": "Texas Kappa Theta Pi"
+            },
+            {
+                "title": "ML Intern",
+                "company": "Citibank"
+            },
+            {
+                "title": "Software Engineer, Hotfire Engine Test Stand",
+                "company": "Texas Rocket Engineering Lab",
+                "link": "https://www.texasrocketlab.com/"
+            },
+            {
+                "title": "SWE Intern",
+                "company": "Texas Momentum",
+                "link": "https://www.txmomentum.org/"
+            }
+        ],
+        "2021": [
+            {
+                "title": "Build Team Engineer",
+                "company": "Texas Convergent",
+                "link": "https://www.txconvergent.org/"
+            }
+        ]
+    },
+    "projects": []
+}
