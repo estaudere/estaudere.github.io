@@ -3,22 +3,22 @@
         {
             "title": "Mail",
             "link": "mailto:neha.desaraju@gmail.com",
-            "icon": "fa-solid fa-envelope"
+            "icon": "fa fa-envelope"
         },
         {
             "title": "Github",
             "link": "https://github.com/estaudere",
-            "icon": "fa-brand fa-github"
+            "icon": "fa fa-github"
         },
         {
             "title": "LinkedIn",
             "link": "https://www.linkedin.com/in/neha-desaraju/",
-            "icon": "fa-brand fa-linkedin"
+            "icon": "fa fa-linkedin"
         },
         {
             "title": "Resume",
             "link": "https://google.com/",
-            "icon": "fa-solid fa-file-pdf"
+            "icon": "fa fa-file-pdf"
         }
     ],
     "currently":{
