@@ -55,5 +55,14 @@
             }
         ]
     },
-    "projects": []
+    "projects": [
+        {
+            "title": "The Sidekick: <em>Not in the books</em>",
+            "description": "Data story written for student publication <a href='https://coppellstudentmedia.com'>Coppell Student Media</a> as an explainer on the state of the Coppell ISD budget. Won honorable mention for best NSPA multimedia story.",
+            "link": "https://coppellstudentmedia.github.io/budget/",
+            "gh-link": "https://github.com/coppellstudentmedia/budget",
+            "image": "https://github.com/coppellstudentmedia/budget/blob/master/assets/vonita_background-01.png?raw=true",
+            "date": "March 2021"
+        }
+    ]
 }
