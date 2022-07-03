@@ -63,6 +63,12 @@
             "gh-link": "https://github.com/coppellstudentmedia/budget",
             "image": "https://github.com/coppellstudentmedia/budget/blob/master/assets/vonita_background-01.png?raw=true",
             "date": "March 2021"
+        },
+        {
+            "title": "Visualizing COVID",
+            "description": "A series of visualizations exploring the COVID-19 pandemic. Made using Python and Plotly.",
+            "gh-link": "https://github.com/estaudere/covid-visualizations",
+            "date": "December 2020"
         }
     ]
 }
