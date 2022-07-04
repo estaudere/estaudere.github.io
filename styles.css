@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben&family=Manrope:wght@400;600&display=swap');
+
+*:root {
+    --bg-color: #fff8e7;
+    --text-color: #323232;
+    --primary: #2d4631;
+    --secondary: #709775;
+    --text-color-secondary: #777777;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Manrope", "BlinkMacSystemFont", "applesystem", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+}
+
+.home {
+    margin: 30vh auto;
+    width: 50%;
+}
+
+#main {
+    /* text-transform: uppercase; */
+    color: var(--primary);
+    /* color: var(--bg-color); */
+    /* text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827, 2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827, 5px 5px #db2777; */
+    font-size: 5.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#tagline {
+    color: var(--text-color-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+
+h1, h4 {
+    font-family: 'Corben', serif;
+    letter-spacing: 0.03rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--secondary);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+.divider > hr {
+    margin: 0.8rem 0 1rem 0;
+    border-top: 0.09rem solid var(--text-color-secondary);
+}
+
+i {
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.company {
+    margin: 0.6rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.work-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.year {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-color-secondary);
+    letter-spacing: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.items {
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 3rem;
+}

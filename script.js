@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $.getJSON("https://raw.githubusercontent.com/estaudere/estaudere.github.io/master/data.json", function(data) {
     addSocials(data.socials);
-    addCurrently(data.currently['2022'], '2022');
     addCurrently(data.currently['2021'], '2021');
+    addCurrently(data.currently['2022'], '2022');
     addProjects(data.projects);
   })
 });
@@ -38,7 +38,7 @@ function addProjects(projects) {
       gh_link = `<a href="${val['gh-link']}" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>`;
     }
 
-    text = `<li class='project'><h4>${val.title}${link}${gh_link}</h4><p class="date">${val.date}</p><p class="description">${val.description}</li>`;
+    text = `<li class='project'><h4>${val.title}${link}${gh_link}</h4><p class="date">${val.date}</p><p class="description">${val.description}</p></li>`;
     $("#projects > ul").append(text);
   })
 }
