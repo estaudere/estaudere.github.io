@@ -57,6 +57,19 @@
     },
     "projects": [
         {
+            "title": "Cassetteify",
+            "description": "A web application inspired by the popular <a href='https://receiptify.herokuapp.com/'>Receiptify</a> that displays a user's top 10 popular artists from Spotify. Built with Flask and the Spotify API.",
+            "gh-link": "https://github.com/estaudere/cassetteify",
+            "date": "June 2022"
+        },
+        {
+            "title": "Termina (API)",
+            "description": "The backend for Termina, a web application that uses your Spotify data and machine learning to classify you into one of 12 character archetypes (based in a post-modern, cyberpunk world where an AI has taken over, of course). Made with scikit-learn, Flask, and the Spotify API, for <a href='https://hacks2021.uncommonhacks.com'>Uncommon Hacks</a>, where the full project won most creative hack. Frontend (made by team) was built in React and designed in Figma.",
+            "date": "April 2021",
+            "gh-link": "https://github.com/estaudere/termina-api",
+            "link": "https://devpost.com/software/cai-an-artificial-intelligence"
+        },
+        {
             "title": "The Sidekick: <em>Not in the books</em>",
             "description": "Data story written for student publication <a href='https://coppellstudentmedia.com'>Coppell Student Media</a> as an explainer on the state of the Coppell ISD budget. Won honorable mention for best NSPA multimedia story.",
             "link": "https://coppellstudentmedia.github.io/budget/",
@@ -69,6 +82,12 @@
             "description": "A series of visualizations exploring the COVID-19 pandemic. Made using Python and Plotly.",
             "gh-link": "https://github.com/estaudere/covid-visualizations",
             "date": "December 2020"
+        },
+        {
+            "title": "<em>I'm 16. Here's why I organized for Bernie Sanders.</em> For Mic.com",
+            "description": "Article written for <a href='https://mic.com'>Mic.com</a> detailing my work early during the 2020 election season after Bernie Sanders dropped out of the Democratic primary.",
+            "link": "https://www.mic.com/impact/im-16-heres-why-i-organized-for-bernie-sanders-22645851",
+            "date": "April 2020"
         }
     ]
 }
