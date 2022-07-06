@@ -69,6 +69,12 @@
             "date": "January 2022"
         },
         {
+            "title": "Student Loan Information",
+            "description": "Website built for Citibank's WIT one-week program final project. The website displays information concerning student loans. Built with Bootstrap. I developed the student loan map by parsing data from <a href='https://howmuch.net/sources/university-with-the-most-student-loan-originations-in-every-state'>howmuch.net</a> and displaying using D3.js.",
+            "link": "https://student-loan-data.estaudere.repl.co/",
+            "date": "June 2021"
+        },
+        {
             "title": "Termina (API)",
             "description": "The backend for Termina, a web application that uses your Spotify data and machine learning to classify you into one of 12 character archetypes (based in a post-modern, cyberpunk world where an AI has taken over, of course). Made with scikit-learn, Flask, and the Spotify API, for <a href='https://hacks2021.uncommonhacks.com'>Uncommon Hacks</a>, where the full project won most creative hack. Frontend (made by team) was built in React and designed in Figma.",
             "gh-link": "https://github.com/estaudere/termina-api",
@@ -77,7 +83,7 @@
         },
         {
             "title": "The Sidekick: <em>Not in the books</em>",
-            "description": "Data story written for student publication <a href='https://coppellstudentmedia.com'>Coppell Student Media</a> as an explainer on the state of the Coppell ISD budget. Won honorable mention for best NSPA multimedia story.",
+            "description": "Data story written for student publication <a href='https://coppellstudentmedia.com'>Coppell Student Media</a> as an explainer on the state of the Coppell ISD budget. Won honorable mention for best NSPA multimedia story. Visualizations built with D3.js, jQuery, and enter-view.",
             "link": "https://coppellstudentmedia.github.io/budget/",
             "gh-link": "https://github.com/coppellstudentmedia/budget",
             "image": "https://github.com/coppellstudentmedia/budget/blob/master/assets/vonita_background-01.png?raw=true",
