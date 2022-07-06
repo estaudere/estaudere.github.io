@@ -63,11 +63,17 @@
             "date": "June 2022"
         },
         {
+            "title": "resume-from-gsheets",
+            "description": "A web application that generates a fully formatted resume (in PDF and regular HTML format) from a Google Sheets spreadsheet. Built with Flask, Google Sheets API, and weasyprint to convert HTML to PDF.",
+            "gh-link": "https://github.com/estaudere/resume-from-gsheets",
+            "date": "January 2022"
+        },
+        {
             "title": "Termina (API)",
             "description": "The backend for Termina, a web application that uses your Spotify data and machine learning to classify you into one of 12 character archetypes (based in a post-modern, cyberpunk world where an AI has taken over, of course). Made with scikit-learn, Flask, and the Spotify API, for <a href='https://hacks2021.uncommonhacks.com'>Uncommon Hacks</a>, where the full project won most creative hack. Frontend (made by team) was built in React and designed in Figma.",
-            "date": "April 2021",
             "gh-link": "https://github.com/estaudere/termina-api",
-            "link": "https://devpost.com/software/cai-an-artificial-intelligence"
+            "link": "https://devpost.com/software/cai-an-artificial-intelligence",
+            "date": "April 2021"
         },
         {
             "title": "The Sidekick: <em>Not in the books</em>",
