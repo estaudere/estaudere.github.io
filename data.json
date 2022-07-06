@@ -57,6 +57,12 @@
     },
     "projects": [
         {
+            "title": "Snap-It Card Generator",
+            "description": "CLI tool that allows teachers and parents to generate picture cards for kids to use with colored snap-it blocks from images online. Made for my younger sister using Python.",
+            "gh-link": "https://github.com/estaudere/snapit-card-generator",
+            "date": "July 2022"
+        },
+        {
             "title": "Cassetteify",
             "description": "A web application inspired by the popular <a href='https://receiptify.herokuapp.com/'>Receiptify</a> that displays a user's top 10 popular artists from Spotify. Built with Flask and the Spotify API.",
             "gh-link": "https://github.com/estaudere/cassetteify",
