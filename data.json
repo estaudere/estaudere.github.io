@@ -16,6 +16,11 @@
             "icon": "fa-brands fa-linkedin"
         },
         {
+            "title": "Medium",
+            "link": "https://medium.com/@nehadesaraju",
+            "icon": "fa-brands fa-medium"
+        },
+        {
             "title": "Resume",
             "link": "/resume.pdf",
             "icon": "fa fa-file-pdf"
