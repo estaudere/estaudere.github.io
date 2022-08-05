@@ -80,6 +80,12 @@
             "date": "January 2022"
         },
         {
+            "title": "Outlander Magazine: <em>The Hitchhiker</em>,
+            "description": "A three thousand-word short story about a lonely young man who finds himself on the run, published in the <em>Odyssey</em> edition of Outlander Magazine.",
+            "link": "https://drive.google.com/file/d/1n0iYIKWsJM_r-seNeJ3aewo7YiaTBX1R/view",
+            "date": "December 2021"
+        },
+        {
             "title": "Student Loan Information",
             "description": "Website built for Citibank's WIT one-week program final project. The website displays information concerning student loans. Built with Bootstrap. I developed the student loan map by parsing data from <a href='https://howmuch.net/sources/university-with-the-most-student-loan-originations-in-every-state'>howmuch.net</a> and displaying using D3.js.",
             "link": "https://student-loan-data.estaudere.repl.co/",
