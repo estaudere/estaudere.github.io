@@ -63,7 +63,7 @@
     "projects": [
         {
             "title": "KTP Slackbot",
-            "description": "Slack bot for Kappa Theta Pi members to seamlessly check in to events and track the events they've been to. Easily allows memberships committee to track member activity across the board.",
+            "description": "Slack bot for Kappa Theta Pi members to seamlessly check in to events and track the events they've been to. Easily allows memberships committee to track member activity across the board. Built with Slack Events API, Google Sheets API, and GCP Cloud Functions.",
             "gh-link": "https://github.com/estaudere/ktp-bot",
             "date": "November 2022"
         },
