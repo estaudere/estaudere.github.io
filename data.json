@@ -27,15 +27,22 @@
         }
     ],
     "currently":{
+        "2023": [
+            {
+                "title": "Executive Director of Technical Development",
+                "company": "Texas Kappa Theta Pi"
+            },
+            {
+                "title": "Undergraduate Research Assistant",
+                "company": "Human-AI Interaction Lab @ UT Austin".
+                "link": "https://hai.ischool.utexas.edu/"
+            }
+        ]
         "2022": [
             {
                 "title": "Technical Project Manager",
                 "company": "Texas Convergent",
                 "link": "https://www.txconvergent.org/"
-            },
-            {
-                "title": "Executive Director of Technical Development",
-                "company": "Texas Kappa Theta Pi"
             },
             {
                 "title": "ML Intern",
@@ -50,13 +57,6 @@
                 "title": "SWE Intern",
                 "company": "Texas Momentum",
                 "link": "https://www.txmomentum.org/"
-            }
-        ],
-        "2021": [
-            {
-                "title": "Build Team Engineer",
-                "company": "Texas Convergent",
-                "link": "https://www.txconvergent.org/"
             }
         ]
     },
