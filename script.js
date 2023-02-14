@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $.getJSON("https://raw.githubusercontent.com/estaudere/estaudere.github.io/master/data.json", function(data) {
     addSocials(data.socials);
-    addCurrently(data.currently['2021'], '2021');
     addCurrently(data.currently['2022'], '2022');
+    addCurrently(data.currently['2023'], '2023');
     addProjects(data.projects);
   })
 });
