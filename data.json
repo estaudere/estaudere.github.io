@@ -92,6 +92,12 @@
             "date": "December 2021"
         },
         {
+            "title": "Dallas Morning News: <em>How are Dallas' neighborhood boundaries determined?</em>",
+            "description": "A reported story written for the <em>Dallas Morning News</em> Curious Texas column on how people from various neighborhoods in Dallas term other neighborhoods, and who's right. Written during the DMN's mentorship program.",
+            "link": "https://www.dallasnews.com/news/curious-texas/2021/08/18/how-are-dallas-neighborhood-boundaries-determined-curious-texas-investigates/",
+            "date": "August 2021"
+        },
+        {
             "title": "Student Loan Information",
             "description": "Website built for Citibank's WIT one-week program final project. The website displays information concerning student loans. Built with Bootstrap. I developed the student loan map by parsing data from <a href='https://howmuch.net/sources/university-with-the-most-student-loan-originations-in-every-state'>howmuch.net</a> and displaying using D3.js.",
             "link": "https://student-loan-data.estaudere.repl.co/",
