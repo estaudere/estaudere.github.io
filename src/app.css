@@ -4,7 +4,7 @@
 
 @layer utilities {
     .extra-margin {
-        margin-left: 10rem;
-        margin-right: 10rem;
+        @apply ml-[5vw] mr-[5vw];
+        @apply md:ml-[15rem] md:mr-[15rem];
     } 
 }

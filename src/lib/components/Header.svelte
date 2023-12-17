@@ -13,7 +13,7 @@
     }
 </script>
 
-<div class="h-20"></div>
+<div class="h-24"></div>
 <div class="flex flex-row mt-12 extra-margin mb-10">
     <h1 class="text-3xl font-bold">
         <a href="/">Neha Desaraju</a>
@@ -32,3 +32,4 @@
         {/each}
     </div>
 </div>
+<div class="h-10"></div>
