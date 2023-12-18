@@ -30,6 +30,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@rollup/pluginutils": "^5.1.0",
+		"marked": "^11.1.0",
+		"strftime": "^0.10.2",
 		"unplugin-icons": "^0.18.1"
 	}
 }

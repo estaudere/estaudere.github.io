@@ -26,9 +26,8 @@
 <p class="mb-5 text-lg">
     In the past, I've worked on a variety of research projects ranging from differentiable
     retrieval systems to language agents to foundation multimodal models, as well as 
-    software engineering stints at places like Citibank. I'm drawn to complex systems, systems which
-    are more than the sum of their parts, especially ones that are able to adapt and learn from
-    an ever-changing environment.
+    software engineering stints at places like Citibank. I'm drawn to complex systems — systems 
+    which are more than the sum of their parts — and building systems that can navigate such spaces.
 </p>
 <p class="mb-5 text-lg">
     I'm really just a curious person who likes to learn and build things. I'm also helping to
@@ -36,7 +35,7 @@
     <a class="link" href="https://txmomentum.org">Texas Momentum</a> and 
     Texas Venture Group (coming soon!).
 </p>
-<p class="text-sm text-slate-500 mt-10">
+<p class="text-sm text-slate-500 mt-10 hidden">
     I also write — in a past life, I did comms and journalism (you can find some of my published 
     pieces scattered about the internet as well as quotes from me in places like The New Republic 
     and Reuters), and I wrote poems, fiction, and prose. Now, I mostly write about tech and the

@@ -8,4 +8,4 @@
 <div class="extra-margin">
     <slot />
 </div>
-<div class="h-32"></div>
+<div class="h-24"></div>

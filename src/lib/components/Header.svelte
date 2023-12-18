@@ -21,7 +21,7 @@
             <span class="font-light text-gray-500"> — {pageTitle}</span>
         {/if}
     </h1>
-    <div class="flex flex-row ml-auto text-sm">
+    <div class="flex flex-row ml-auto text-sm items-center">
         {#each links as link}
             <a
                 class="text-xl text-bold mr-4 text-gray-500 underline underline-offset-4 decoration-transparent hover:text-current transition-colors hover:decoration-current"
