@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import yaml from "js-yaml";
 import Icons from 'unplugin-icons/vite';
 import { dataToEsm } from "@rollup/pluginutils";
+import postcss from './postcss.config.js';
 
 /** A custom Markdown plugin for Vite, with TOML frontmatter support. */
 function markdown() {
@@ -40,4 +41,7 @@ export default defineConfig({
 			autoInstall: true,
 		}),
 		markdown()],
+  css: {
+    postcss,
+  }
 });

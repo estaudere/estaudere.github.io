@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: [
-    './src/**/*.svelte',
-    './src/**/*.html',
-    './src/**/*.js',
-  ],
+  purge: {
+    content: ['./src/**/*.svelte', './src/**/*.html', './src/**/*.js'],
+  },
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
@@ -13,5 +11,9 @@ export default {
       },
     }
   },
-  plugins: []
+  plugins: [],
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  }
 };
