@@ -12,4 +12,4 @@
     </span>
 </h3>
 
-<Markdown source={data.content} />
+<Markdown source={data.content}/>

@@ -12,7 +12,7 @@
 </script>
 
 {#each Object.keys(projects) as id}
-    <div class="mb-10">
+    <div class="mb-12">
         <Project data={projects[id]} />
     </div>
 {/each}
