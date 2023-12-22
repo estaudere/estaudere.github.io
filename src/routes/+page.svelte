@@ -1,3 +1,12 @@
+<script>
+    import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo 
+    title="Neha Desaraju"
+    description="CS student studying machine learning and AI at UT Austin."
+/>
+
 <p class="mb-5 text-lg">
     I'm currently an undergrad at UT Austin studying computer science with a focus on
     machine learning and its applications in everything from autonomous systems to large generative

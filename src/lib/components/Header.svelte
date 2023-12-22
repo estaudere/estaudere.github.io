@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
     const links = [
         { name: 'projects', href: '/projects' },
-        { name: 'resume', href: '/resume' },
+        { name: 'cv', href: '/assets/CV.pdf' },
     ];
 
     let pageTitle = '';
