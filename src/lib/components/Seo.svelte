@@ -11,7 +11,7 @@
     <meta property="og:description" content={description} />
     <meta
         property="og:image"
-        content="%sveltekit.assets%/card.png"
+        content="/card.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
