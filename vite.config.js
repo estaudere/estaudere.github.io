@@ -40,8 +40,5 @@ export default defineConfig({
 			scale: 1.2,
 			autoInstall: true,
 		}),
-		markdown()],
-  css: {
-    postcss,
-  }
+		markdown()]
 });

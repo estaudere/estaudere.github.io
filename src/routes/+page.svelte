@@ -1,6 +1,6 @@
 <script>
     import Seo from '$lib/components/Seo.svelte';
-</script>
+</script> 
 
 <Seo 
     title="Neha Desaraju"
